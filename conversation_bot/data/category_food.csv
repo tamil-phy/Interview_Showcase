@@ -1,0 +1,110 @@
+food_item,category,type,price,item_uuid,course_uuid
+Vegetable Samosa,Appetizers,,1234,1,1
+Kachumber Salad,Appetizers,,1235,2,1
+Veg Pakora,Appetizers,,1236,3,1
+Grilled Paneer Tikka,Appetizers,,1237,4,1
+Gobi Manchurian,Appetizers,,1238,5,1
+Vegetable Samosa Chat,Appetizers,,1238,6,1
+Peppercorn Chicken,Appetizers,,1238,7,1
+Chicken Lettuce Wrap,Appetizers,,1238,8,1
+Chicken 65,Appetizers,,1238,9,1
+Lamb Meatballs,Appetizers,,1238,10,1
+Sa-Lemon,Appetizers,,1238,12,1
+Tava Chingri,Appetizers,,1238,13,1
+Butter Naan,Breads,,1239,14,3
+Cheese Naan,Breads,,1239,15,3
+Bullet Naan,Breads,,1239,16,3
+Garlic Naan,Breads,,1239,17,3
+Roti,Breads,,1239,18,3
+Aloo Paratha,Breads,,1239,19,3
+Onion Kulcha,Breads,,1239,20,3
+Paratha,Breads,,1239,21,3
+Puri / Poori,Breads,,1239,22,3
+Vegetable (Mix),Biryani's Entrees,,1239,23,2
+Paneer,Biryani's Entrees,,1239,24,2
+Chicken,Biryani's Entrees,,1239,25,2
+Goat,Biryani's Entrees,,1239,26,2
+Lamb,Biryani's Entrees,,1239,27,2
+Shrimp,Biryani's Entrees,,1239,28,2
+Chicken + Vegetables,Biryani's Entrees,,1239,29,2
+Chicken + Shrimp,Biryani's Entrees,,1239,30,2
+Chicken + Lamb,Biryani's Entrees,,1239,31,2
+Chicken + Goat,Biryani's Entrees,,1239,32,2
+Lamb + Goat,Biryani's Entrees,,2320,33,2
+Lamb + Shrimp,Biryani's Entrees,,2320,34,2
+Paneer + Vegetables,Biryani's Entrees,,2320,35,2
+Shrimp + Vegetables,Biryani's Entrees,,2320,36,2
+Lamb + Vegetables,Biryani's Entrees,,2320,37,2
+Goat + Shrimp,Biryani's Entrees,,2320,38,2
+Chicken + Paneer,Biryani's Entrees,,2320,39,2
+Paneer + Shrimp,Biryani's Entrees,,2320,40,2
+Paneer + Lamb,Biryani's Entrees,,2320,41,2
+Paneer,Curry's Specials,,2320,42,4
+Vegetables (Mix),Curry's Specials,,2320,43,4
+Chicken,Curry's Specials,,2320,44,4
+Shrimp,Curry's Specials,,5650,45,4
+Fish,Curry's Specials,,5650,46,4
+Lamb,Curry's Specials,,5650,47,4
+Goat,Curry's Specials,,5650,48,4
+Chicken + Lamb,Curry's Specials,,5650,49,4
+Lamb + Goat,Curry's Specials,,5650,50,4
+Chicken + Vegetables,Curry's Specials,,5650,51,4
+Paneer + Shrimp,Curry's Specials,,5650,52,4
+Lamb + Vegetables,Curry's Specials,,5650,53,4
+Chicken + Goat,Curry's Specials,,5650,54,4
+Lamb + Shrimp,Curry's Specials,,5650,55,4
+Goat + Shrimp,Curry's Specials,,5650,56,4
+Chicken + Shrimp,Curry's Specials,,5650,57,4
+Chicken + Paneer,Curry's Specials,,5650,58,4
+Paneer + Lamb,Curry's Specials,,5650,59,4
+Paneer + Vegetables,Curry's Specials,,5650,60,4
+Shrimp + Vegetables,Curry's Specials,,6000,61,4
+Tikka Masala,Curry's Specials,,6000,62,4
+Vindaloo,Curry's Specials,,6000,63,4
+Kadhai,Curry's Specials,,6000,64,4
+Korma,Curry's Specials,,6000,65,4
+Chettinad,Curry's Specials,,6000,66,4
+Saag,Curry's Specials,,6000,67,4
+Curry,Curry's Specials,,6000,68,4
+Tadka Daal,Entrees,,6000,69,5
+Aloo Gobi,Entrees,,6000,70,5
+Baingan Bharta,Entrees,,6000,71,5
+Bhindi Masala,Entrees,,6000,72,5
+Malai Kofta,Entrees,,6000,73,5
+Shahi Paneer (korma),Entrees,,6000,74,5
+Mutter Paneer,Entrees,,6000,75,5
+Goat Bhuna Curry,Entrees,,6000,76,5
+Butter Paneer,Entrees,,6000,77,5
+Butter Chicken,Entrees,,6000,78,5
+Methi Wali Kali Murgh,Entrees,,6000,79,5
+LAMB ROGAN JOSH,Entrees,,6000,80,5
+Goan Shrimp,Entrees,,8980,81,5
+Fish Curry,Entrees,,8980,82,5
+Chana Masala,Entrees,,8980,83,5
+Aloo Chana,Entrees,,8980,84,5
+Saag Chana,Entrees,,8980,85,5
+Aloo Mutter,Entrees,,8980,86,5
+Grilled Vegetables,Sides/ Desserts,,8980,87,6
+Baby Potatoes,Sides/ Desserts,,8980,88,6
+Onions / Lemon / Chilis,Sides/ Desserts,,8980,89,6
+Rasmalai,Sides/ Desserts,,8980,90,6
+Gulab Jamun,Sides/ Desserts,,8980,91,6
+Bread Pudding,Sides/ Desserts,,8980,92,6
+Jeera Rice,Sides/ Desserts,,8980,93,6
+Mint,Sides/ Desserts,,8980,94,6
+Raita,Sides/ Desserts,,8980,95,6
+Rice Pudding,Sides/ Desserts,,8980,96,6
+Tiramisu,Sides/ Desserts,,8980,97,6
+Chocolate Mousse,Sides/ Desserts,,8980,98,6
+Yogurt,Sides/ Desserts,,8980,99,6
+Mix Pickle,Sides/ Desserts,,8980,100,6
+Mango Chutney,Sides/ Desserts,,8980,101,6
+Kulfi,Sides/ Desserts,,8980,102,6
+Lemon Rice,Sides/ Desserts,,8980,103,6
+Grilled Shrimp,Tandoori's Specials,,8980,104,7
+Lamb Chops,Tandoori's Specials,,8980,105,7
+Lobster Tails,Tandoori's Specials,,8980,106,7
+Grilled Chicken,Tandoori's Specials,,8980,107,7
+Hariyali Chicken,Tandoori's Specials,,8980,108,7
+Keshar Chicken,Tandoori's Specials,,8980,109,7
+Tandoori Chicken,Tandoori's Specials,,8980,110,7

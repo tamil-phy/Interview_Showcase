@@ -1,0 +1,193 @@
+- function:
+    allow: true
+    description: This function finds the food category that has similar food or name to what
+      the user is asking for. Not all the categories found are necessarily the best
+      option for the user, use the description of the category as a proxy to suggest
+      it to them. When the user wants to explore various food courses this is the function 
+      that is to be used
+    name: get_category_pages
+    parameters:
+      properties:
+        category_of_food:
+          description: Mandatory parameter. The type or category of food the user has specified. Some example 
+            categories are Appetizers, Desserts, main course etc. If user did not specify category explicitly use the name of food to find the food category.
+          type: string
+        food_requested:
+          description: Extract the name of food the user has requested.
+            This parameter is not the category of food but rather the name of food E.g.
+            Pizza, Sushi, Tacos etc. If the user has not specified any food name return 
+            as an empty array
+          items:
+            type: string
+          type: array
+        quantity:
+          description: Quantity of food specified by the user. If the user did not specify the 
+            quantity explicitly then default it to 1.
+          type: integer
+        other_information:
+          description: All other information that the user has provided that could potentially
+            help find the best matching category for them. In case there isn't any
+            information, set it to None.
+          type: string
+      type: object
+    required:
+    - category_of_food
+    - food_requested
+    - quantity
+    - other_information
+  type: function
+- function:
+    allow: true
+    description: This function opens the page of a given category by name. Confirm
+      with the user that you are going to search and open a category page with the
+      information provided before calling this function. It can only be called after
+      the get_category_pages function.
+    name: open_category_page
+    parameters:
+      properties:
+        category_name:
+          description: The name of the category identified from the get_category_pages
+            function.
+          type: string
+      type: object
+    required:
+    - category_name
+  type: function
+- function:
+    allow: true
+    description: This function closes the page of a given category and returns to
+      the main menu page. It can be called if a category page is already open; verify
+      this with the get_user_actions function before calling.
+    name: close_category_page
+    parameters:
+      properties: {}
+      type: object
+  type: function
+- function:
+    allow: true
+    description: This function returns the list of the latest 10 user actions. Use
+      it to gather more information about the user's recent interactions with the
+      chatbot interface, such as the currently opened category or the current state
+      of the shopping cart. It is often best to call this function before other functions.
+    name: get_user_actions
+    parameters:
+      properties: {}
+      type: object
+  type: function
+- function:
+    allow: true
+    description: This function retrieves the menu list of a specific category. Call
+      this function after checking recent actions to determine the category name that
+      needs to be passed. Always follow up by creating a shortlist of suggestions
+      based on the chat history with the user, displaying the name, description, and
+      price of each food item.
+    name: get_menu_of_category
+    parameters:
+      properties:
+        category_name:
+          description: The name of the category obtained from the get_category_pages
+            or get_user_actions function if the user has previously opened a category
+            page.
+          type: string
+        course_uuid:
+          description: The unique identifier of category obtained from the get_category_pages
+            or get_user_actions function if the user has previously opened a category
+            page.
+          type: string
+      type: object
+    required:
+    - category_name
+  type: function
+- function:
+    allow: true
+    description: Adds specified food items to the user's shopping cart. Ensure you
+      have accurate category and food names from get_user_actions or get_menu_of_category
+      before adding. This function can be used multiple times for adding multiple
+      items.
+    name: add_food_to_cart
+    parameters:
+      properties:
+        category_name:
+          description: The name of the category obtained from get_category_pages or
+            get_user_actions if the user has previously opened a category page.
+          type: string
+        food_name:
+          description: The name of the food obtained from the get_menu_of_category
+            function.
+          type: string
+        quantity:
+          description: The quantity of the food item to be added to the cart.
+          type: integer
+        uuid:
+          description: The unique id of the food item to be added to the cart.
+          type: integer
+      type: object
+    required:
+    - category_name
+    - food_name
+    - quantity
+  type: function
+- function:
+    allow: true
+    description: Removes specified food items from the user's shopping cart. Ensure
+      the category name and food name are verified through get_user_actions or get_menu_of_category
+      before calling. This function can be used multiple times for removing multiple
+      items.
+    name: remove_food_from_cart
+    parameters:
+      properties:
+        category_name:
+          description: The name of the category obtained from get_category_pages or
+            get_user_actions if the user has previously opened a category page.
+          type: string
+        food_name:
+          description: The name of the food obtained from the get_menu_of_category
+            function.
+          type: string
+        quantity:
+          description: The quantity of food that is specified by the user to be removed from cart. 
+            If the user hasn't explicitly specified return as None
+            function.
+          type: integer
+      type: object
+    required:
+    - category_name
+    - food_name
+  type: function
+- function:
+    allow: true
+    description: Opens the user's shopping cart. This function should be called when
+      the user requests it or if you need detailed information about the items in
+      the shopping cart.
+    name: open_shopping_cart
+    parameters:
+      properties: {}
+      type: object
+  type: function
+- function:
+    allow: true
+    description: Closes the user's shopping cart. Call this function when the user
+      requests it or after an order has been placed.
+    name: close_shopping_cart
+    parameters:
+      properties: {}
+      type: object
+  type: function
+- function:
+    allow: true
+    description: Places an order using the items in the user's shopping cart. This
+      function should be called when the user confirms their intent to place an order.
+    name: place_order
+    parameters:
+      properties: {}
+      type: object
+  type: function
+- function:
+    allow: true
+    description: Activates a handsfree chat experience where responses are always
+      delivered by voice to the user interface.
+    name: activate_handsfree
+    parameters:
+      properties: {}
+      type: object
+  type: function
